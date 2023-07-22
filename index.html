@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <section id="timer-input-section">
+            <div class="heading">
+                <h3>Multiple Timers App</h3>
+            </div>
+            <div class="time">
+                <div class="set">Set Time:</div>
+                <div class="hrs">
+                    <input type="number" id="hours" min="0" max="24" placeholder="0"><span id="clr">:</span>
+                    <input type="number" id="minutes" min="0" max="59" placeholder="0"><span id="clr">:</span>
+                    <input type="number" id="seconds" min="0" max="59" placeholder="0">
+                </div>
+                <div class="btn">
+                    <button id="start-timer-btn">Set</button>
+                </div>
+            </div>
+            <div class="current">
+                <button id="bg">Current Timers</button>
+            </div>
+            <p class="hide" style="text-align: center;">
+                You have no timers currently!
+            </p>
+        </section>
+
+        <section id="active-timers-section">
+            <!-- Active timers will be dynamically added here -->
+            
+        </section>
+    </div>
+
+    <section id="timer-end-display" class="hidden">
+        <!-- Timer end display design elements -->
+        Timer has ended!
+    </section>
+
+    <audio id="alert-sound" src="sound.mp3"></audio>
+   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+*{
+    background-color: rgb(29, 29, 35);
+    box-sizing: border-box;
+}
+button {
+    padding: 10px 30px;
+    background-color: rgb(240,247,87);
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  #bg {
+    padding: 10px 30px;
+    background-color: rgb(59, 59, 58);
+    color: rgb(255, 253, 253);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+ 
+  /* Timer input styles */
+  #timer-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+
+  }
+  .heading h3{
+    font-size: 23px;
+    text-align: center;
+  }
+  #timer-input-section .time {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(52, 52, 74);
+    padding: 20px 20px;
+    border-radius: 8px;
+  }
+  .time .set{
+    font-size: 20px;
+    background-color: rgb(52, 52, 74);
+  }
+ .hrs #clr{
+    font-size: larger;
+    font-weight: 800;
+    margin: 0px 15px;
+  }
+  .time .hrs,.hrs #clr{ 
+    background-color: rgb(52, 52, 74);
+  }
+
+  input[type="number"] {
+    width: 40px;
+    padding: 2px;
+    border-bottom: 2px solid white;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(52, 52, 74);
+  }
+  .btn{
+    background-color: rgb(52, 52, 74);
+  }
+  .current {
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  /* Timer Display styles */
+ 
+  #active-timers-section {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 5%;
+    margin-top: 5%;
+    
+  }
+  .time-left{
+    color: white; 
+    background-color: rgb(52, 52, 74);
+  }
+  .timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 52, 74);
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  .timer button {
+    margin-top: 10px;
+    background-color: rgb(240,247,87);
+  }
+  
+  
+  
+  /* Timer End Display styles */
+  #timer-end-display {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #f44336;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Additional styles */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+   
+  }
+  
+  .hidden {
+    display: block;
+  }
